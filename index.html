@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sports Analytics - Scouting the Best Young Talents across the Globe</title>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		}
+        .soham{
+            text-align: center;
+            font-size: 26px;
+        }
+        .intro {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: center;
+            font-size: 26px;
+            margin: 0 auto;
+			max-width: 1000px;
+        }
+		.header {
+			background-color: #333;
+			color: white;
+			text-align: center;
+			padding: 20px;
+			font-size: 32px;
+			font-weight: bold;
+		}
+        ul{
+            text-align: justifyl
+        }
+        
+		nav {
+			background-color: #555;
+			color: white;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 24px;
+			padding: 10px;
+			border-top: 5px solid #333;
+		}
+		nav a {
+			color: white;
+			text-decoration: none;
+			padding: 10px 20px;
+			margin: 0 10px;
+			border: 2px solid white;
+			border-radius: 5px;
+			transition: all 0.3s ease;
+		}
+		nav a:hover {
+			background-color: white;
+			color: black;
+		}
+		nav a.active {
+			background-color: white;
+			color: black;
+		}
+		.back-btn {
+			display: block;
+			margin-top: 20px;
+			text-align: center;
+		}
+        .content-box {
+        width: 250px;
+        height: 250px;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px;
+        padding: 20px;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .content-box:hover {
+        background-color: #4CAF50;
+        color: white;
+        transform: scale(1.1);
+      }
+
+      .content-box:hover h3 {
+        color: white;
+      }
+      .container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.box {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+.footer{
+    background-color: #555;
+			color: white;
+			text-align: center;
+			padding: 4px;
+			font-size: 30px;
+}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Sports Analytics - Scouting the Best Young Talents across the Globe</h1>
+	</div>
+	<nav>
+		<a href="#" class="active">Home</a>
+		<a href="forwards.html">Forwards</a>
+		<a href="midfielders.html">Midfielders</a>
+		<a href="defenders.html">Defenders</a>
+		<a href="goalkeepers.html">Goal Keepers</a>
+	</nav>
+    
+    <div class="intro">
+        <h2>Introduction</h2>
+        <br><img src="home.jpg" alt="Football pic" width="900" height="500">
+        <p>Football is a sport renowned for its ability to captivate millions
+             of fans worldwide, captivating their hearts and minds with its 
+             thrilling displays of skill, teamwork, and determination. 
+             At the heart of every successful football team lies a solid 
+             foundation of talented players, and the discovery of young 
+             prospects with immense potential is an essential aspect of 
+             the game. Scouting young talent is an indispensable practice 
+             in football, as it allows clubs to identify and nurture promising 
+             players who can shape the future of the sport. By meticulously 
+             observing and evaluating young athletes, clubs can unearth hidden 
+             gems, cultivate their abilities, and ultimately build formidable 
+             teams capable of achieving long-term success. The importance of 
+             scouting young talented players in football cannot be overstated, 
+             as it serves as a catalyst for continuous growth, innovation, and 
+             the preservation of football's rich legacy.</p>
+    </div>
+    <br>
+    <div class="intro">
+        <h2>Prospect of Sport Analytics</h2>
+        <p>What is Sports Analytics? 
+            Sports Analytics is an emerging field in data science & visualization
+             that has begun to be adopted by teams in all kinds of sports played 
+             across the world. Data on players and game are usually collected 
+             and analyzed to - Identify future talent,
+             understanding patterns in the playing styles of opponents,
+            providing feedback to talent and sports betting.      
+            <br>
+            <br>
+            Here, we have focused on analysing the promising talents across the
+            globe and have looked deep into each positions of the football pitch.
+            The goal for such an analysis is to list out the favourable candidate
+            for a club, based on their:
+            
+            <ul style="text-align: justify;">
+                <li>Statistics</li>
+                <li>Potential</li>
+                <li>Market value</li>
+                <li>Wage Demands</li>
+                <li>Longetivity of the contract with their 
+                    current club</li>
+            </ul>
+        </div>
+            <br>
+    <div class="intro">
+        <h2>About the dataset</h2>
+        <p>Football/Soccer is one of the world's most popular sports in the 
+            world with 3.5 Billion people watching it every year. With the 
+            amount of popularity and money involved, teams are always on the 
+            lookout for new upcoming talent. Hence for this project, we are 
+            analyzing a dataset of around 18,944 soccer 
+            players from sofifa.com by web scraping in the pursuit of identifying the best talents 
+            under the age of 22 who fit a set of criteria provided by the
+            analyst of any sports club.<br><br>This dataset consists of about 106 features and around 
+            18,944 rows of tuple values, each containing in depth details about the footballer.<br><br>
+            The tool used to create the visualization is Tableau. Tableau is a data visualization and business intelligence 
+            software that allows users to create interactive and visually appealing dashboards, reports, and charts. It
+             provides a user-friendly interface for analyzing and presenting data from various sources.
+            <br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To visit the site for the data source, click <a href="https://sofifa.com/">here</a>
+            <br>&nbsp;&nbsp;&nbsp;To view the scrapped dataset, click <a href="https://drive.google.com/file/d/1sEA5eqQyfhEUdGSIowoA74zl8tWULHX3/view?usp=sharing">here</a><br>
+            To visit my Tableau public, click <a href="https://public.tableau.com/views/FootballScoutingAnalytics/Story1?:language=en-US&:display_count=n&:origin=viz_share_link">here</a>
+            
+    </div>
+</div>
+<br>
+    
+    <div class="intro">
+        <h2>Who will benefit?</h2>
+        <p>This section analysis outlines the specific individuals or groups that will gain value and advantages from the project's 
+            findings and insights. In the context of analyzing young talent scouting in football, potential beneficiaries may include:<br><br>
+            <ul style="text-align: justify;">
+            <li><b>Football Clubs and Scouts: </b> The visualization project can provide football clubs and scouts with valuable information on young players' 
+                performance, potential, and suitability for their teams. It can assist them in identifying promising talents, 
+                making informed decisions during player recruitment, and optimizing their scouting efforts.</li><br>
+
+            <li><b>Coaches and Academy Staff:</b> The project's findings can benefit coaches and staff working in football academies by offering
+                insights into the strengths and weaknesses of young players. This information can help them tailor training programs,
+                provide individualized coaching, and support player development.</li><br>
+
+            <li><b>Young Players and their Agents:</b> The visualization project can empower young players and their agents by highlighting 
+                their performance metrics and showcasing their abilities to potential suitors.</li><br>
+
+            <li><b>Football Governing Bodies and Associations:</b> The project's analysis can be valuable for football governing bodies 
+                and associations responsible for talent development and player identification. It can aid in the formulation of policies, 
+                strategies, and programs aimed at nurturing young talent, improving youth scouting systems, and promoting fair opportunities
+                 for aspiring players.</li><br>
+
+            <li><b>Fans and Enthusiasts:</b> The visualization project can engage football fans and enthusiasts by providing them with a 
+                deeper understanding of young talent scouting processes and the potential stars of the future. It can generate 
+                excitement, discussion, and anticipation around up-and-coming players, adding an extra layer of interest to the sport.</li>
+    </div>
+    <br>
+	<div class="footer">
+		<div>
+            <h3>Soham Ghosh (RA2011003010504)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18CSE301J - Information Visualization</h3><br>
+        </div>
+</body>
+</html>
